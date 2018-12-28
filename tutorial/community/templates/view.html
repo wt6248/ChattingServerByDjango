@@ -7,11 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    <ul>
-        <li>제목 | 저자 | 날짜</li>
-    {%for article in articleList%}
-      <li><a href="/view/{{article.id}}">{{ article.title }}</a> | {{ article.name }} | {{ article.cdate|date:"D d M Y" }}</li>
-    {% endfor %}
-    </ul>
+   제 목 : {{ article.title }}
+   <br>
+   저 자 : {{ article.name }}
+   <br>
+   내 용 : {{ article.contents }}
+   <br>
+   Email : {{ article.email }}
+   <br>
 </body>
 </html>
